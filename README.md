@@ -17,3 +17,4 @@ Also you have to match it with Client Side as well.
 
 4. ConsoleApp1/ServerSend.cs. : This is a place where actually get ready to send the info to clients.
 
+5. ConsoleApp1/Server.cs : This is a place where you initialize all the info you added from ServerHandle(receiving data part) and Packets (enum you added).

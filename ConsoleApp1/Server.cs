@@ -57,25 +57,11 @@ namespace ConsoleApp1
             {
                 clients.Add(i, new Client(i));
             }
-
+            // Here you need to add whatever you added enums on ClientPackets and recieving data parts in ServerHandle.
             packetHandlers = new Dictionary<int, PacketHandler>()
             {
                 {(int)ClientPackets.welcomeReceived, ServerHandle.WelcomeReceived },
-                {(int)ClientPackets.sendName, ServerHandle.receivedMessageTest },
-                {(int)ClientPackets.receivedAlerts, ServerHandle.ReceivedAlerts },
-                {(int)ClientPackets.FloorInfo, ServerHandle.ReceivedFloorInfo },
-                {(int)ClientPackets.screenshot, ServerHandle.ReceivedScreenshotInfo },
-                {(int)ClientPackets.playersNumber, ServerHandle.ReceivedPlayersNumber },
-                {(int)ClientPackets.TrackerId, ServerHandle.ReceivedTrackerId },
-                {(int)ClientPackets.CannonFire, ServerHandle.ReceivedCannonFired },
-                {(int)ClientPackets.ContentStart, ServerHandle.ReceivedContentStart},
-                {(int)ClientPackets.Language, ServerHandle.ReceivedLanguage},
-                {(int)ClientPackets.Mode, ServerHandle.ReceivedMode},
-                {(int)ClientPackets.Arrow, ServerHandle.ReceivedArrow},
-                {(int)ClientPackets.Shutdown, ServerHandle.ReceivedShutdown},
-                {(int)ClientPackets.videoSkip, ServerHandle.ReceivedVideoSkip},
-                {(int)ClientPackets.restart, ServerHandle.ReceivedRestart}
-
+                {(int)ClientPackets.sendName, ServerHandle.receivedMessageTest }
             };
             Console.WriteLine("Initialized packets.");
         }
