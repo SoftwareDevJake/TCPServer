@@ -9,19 +9,6 @@ namespace ConsoleApp1
     {
         welcome = 1,
         name,
-        alerts,
-        FloorInfo,
-        screenshot,
-        playersNumber,
-        TrackerId,
-        CannonFire,
-        ContentStart,
-        Language,
-        Mode,
-        Arrow,
-        Shutdown,
-        videoSkip,
-        restart
     }
 
     /// <summary>Sent from client to server.</summary>
@@ -29,19 +16,6 @@ namespace ConsoleApp1
     {
         welcomeReceived = 1,
         sendName,
-        receivedAlerts,
-        FloorInfo,
-        screenshot,
-        playersNumber,
-        TrackerId,
-        CannonFire,
-        ContentStart,
-        Language,
-        Mode,
-        Arrow,
-        Shutdown,
-        videoSkip,
-        restart
     }
 
     public class Packet : IDisposable

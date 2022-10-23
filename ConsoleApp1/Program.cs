@@ -18,7 +18,7 @@ namespace ConsoleApp1
             Thread mainThread = new Thread(new ThreadStart(MainThread));
             mainThread.Start();
 
-            Server.Start(50, 26951);
+            Server.Start(10,8080); // *** put max player and port number for your server.
         }
 
         private static void MainThread()
